@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Happy Birthday Emu 🎂</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <style>
+    body {
+      background:
+        radial-gradient(circle at top left, #fff8df 0%, transparent 35%),
+        radial-gradient(circle at bottom right, #fff3c4 0%, transparent 35%),
+        #fffdf5;
+      color: #3f3a2f;
+    }
+
+    .card {
+      animation: fadeIn 0.7s ease;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(15px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center px-4 py-8">
+
+  <!-- =========================
+       MAIN PAGE
+  ========================== -->
+  <main
+    id="mainPage"
+    class="card bg-white w-full max-w-md rounded-3xl shadow-xl border border-yellow-100 p-6 sm:p-8 text-center"
+  >
+
+    <!-- Header -->
+    <div class="mb-5">
+      <div class="text-3xl mb-2">🌙✨</div>
+
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[#3f3a2f]">
+        Happy Birthday
+      </h1>
+
+      <h2 class="text-2xl sm:text-3xl font-bold text-[#f5ce42] mt-1">
+        Emu 💛
+      </h2>
+    </div>
+
+    <!-- Arabic -->
+    <p class="text-lg text-gray-600 font-semibold mb-5">
+      بارك الله في عمركِ 🤍
+    </p>
+
+    <!-- Main Image -->
+    <div class="mb-6">
+      <img
+        src="imuti.jpg"
+        alt="Emu"
+        class="w-48 h-48 sm:w-52 sm:h-52 object-cover rounded-full mx-auto border-4 border-[#f5ce42] shadow-md"
+      >
+    </div>
+
+    <!-- Message -->
+    <div class="text-gray-600 text-base sm:text-lg leading-relaxed mb-6">
+      <p>
+        Happy Birthday, Emu! 💖🎂
+      </p>
+
+      <p class="mt-3">
+        May Allah bless your beautiful heart, fill your life
+        with happiness and barakah, and grant you all the
+        beautiful things you pray for. Ameen 🤲
+      </p>
+    </div>
+
+    <!-- Surprise Button -->
+    <button
+      onclick="showSurprise()"
+      class="w-full bg-[#f5ce42] text-white font-semibold
+             px-6 py-3 rounded-xl shadow-md
+             hover:bg-[#d9b638] hover:shadow-lg
+             transition duration-300"
+    >
+      Open Your Surprise 🎁
+    </button>
+
+    
+
+  </main>
+
+
+  <!-- =========================
+       SURPRISE PAGE
+  ========================== -->
+  <section
+    id="surprisePage"
+    class="hidden card bg-white w-full max-w-md rounded-3xl shadow-xl border border-yellow-100 p-6 sm:p-8 text-center"
+  >
+
+    <!-- Header -->
+    <div class="mb-5">
+      <div class="text-4xl mb-2">🎁✨</div>
+
+      <h1 class="text-3xl font-extrabold text-[#3f3a2f]">
+        A Little Surprise
+      </h1>
+
+      <p class="text-[#f5ce42] font-bold text-xl mt-1">
+        For You, Emu 💛
+      </p>
+    </div>
+
+    <!-- Surprise Image -->
+    <img
+      src="surprise.jpg"
+      alt="A special surprise for Emu"
+      class="w-56 h-56 object-cover rounded-2xl mx-auto mb-6
+             border-4 border-[#f5ce42] shadow-md"
+    >
+
+    <!-- Dua -->
+    <p class="text-gray-600 italic leading-relaxed mb-6">
+      May Allah always protect you, guide you,
+      bless your journey, and grant you Jannah.
+      Ameen 🤲
+    </p>
+
+    <!-- Personal Message -->
+    <div
+      class="bg-[#fff8df] border border-yellow-100
+             rounded-2xl p-5 text-sm sm:text-base
+             text-gray-600 leading-relaxed text-left"
+    >
+
+      <h2 class="text-center font-bold text-lg text-[#3f3a2f] mb-4">
+        🌸 A Little Message For You 🌸
+      </h2>
+
+      <p class="mb-4">
+        Emu, I just want you to know how grateful I am
+        to have you in my life. You are such a kind,
+        beautiful, and precious person, and I truly
+        appreciate every moment, every laugh, and every
+        memory we have shared. 🤍
+      </p>
+
+      <p class="mb-4">
+        May Allah always keep light in your heart,
+        guide you toward what is best, and make your
+        journey easy and beautiful.
+      </p>
+
+      <p class="mb-4">
+        May He help you complete your Hifz with ease,
+        grant you peace of heart, and give you strength
+        and happiness along the way. 🤲📖
+      </p>
+
+      <p class="mb-4">
+        May Allah bless you with a loving spouse,
+        a peaceful home filled with barakah, and, 
+        in the future, bless you with beautiful 
+        children and make you a wonderful, loving,
+        and patient mother. 🤍👶 and a
+        graduation that makes you incredibly proud
+        of yourself. 🎓💐
+      </p>
+
+      <p class="mb-4">
+        May your business grow beyond what you imagine,
+        with abundant halal rizq and countless blessings.
+        May Allah accept your duas and give you even more
+        than what your heart asks for. 
+      </p>
+
+      <p class="font-semibold text-[#3f3a2f]">
+        You deserve so much goodness, Emu.
+        Never forget that. 💖
+      </p>
+
+      <p class="text-center font-bold text-lg mt-5">
+        Happy Birthday once again! 🎂🎉
+      </p>
+
+    </div>
+
+    <!-- Decorations -->
+    <div class="text-3xl my-5">
+      🎉 💛 🎈
+    </div>
+
+    <!-- Back Button -->
+    <button
+      onclick="goBack()"
+      class="px-6 py-2.5 bg-gray-200 text-gray-600
+             font-medium rounded-xl
+             hover:bg-gray-300 transition duration-300"
+    >
+      ← Go Back
+    </button>
+
+  </section>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================== -->
+  <script>
+
+    function showSurprise() {
+
+      document
+        .getElementById("mainPage")
+        .classList.add("hidden");
+
+      document
+        .getElementById("surprisePage")
+        .classList.remove("hidden");
+
+      // Celebration 🎉
+      confetti({
+        particleCount: 180,
+        spread: 90,
+        startVelocity: 35,
+        origin: {
+          y: 0.6
+        }
+      });
+    }
+
+
+    function goBack() {
+
+      document
+        .getElementById("surprisePage")
+        .classList.add("hidden");
+
+      document
+        .getElementById("mainPage")
+        .classList.remove("hidden");
+    }
+
+  </script>
+
+</body>
+</html>
